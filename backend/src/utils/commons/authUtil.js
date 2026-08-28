@@ -6,3 +6,7 @@ import { JWT_EXPIRY, JWT_SECRET } from '../../configs/serverConfig.js';
      expiresIn: JWT_EXPIRY
    });
  };
+
+ export const verifyJWT = (token) => {
+   return jwt.verify(token, JWT_SECRET);
+ };
