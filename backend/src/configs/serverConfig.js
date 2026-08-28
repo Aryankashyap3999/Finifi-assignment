@@ -10,3 +10,4 @@ export const PROD_DB_URL = process.env.PROD_DB_URL || "sample_prod_db_url";
 export const DB_DRIVER = process.env.DB_DRIVER || "mongo";
 export const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 export const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-3.6-flash";
+export const CORS_ORIGIN = process.env.CORS_ORIGIN || "http://localhost:3001";
