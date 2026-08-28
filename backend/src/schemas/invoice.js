@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 
+import { documentFileFields } from './shared/documentFileFields.js';
 import { itemBaseFields } from './shared/itemBaseFields.js';
 
 const invoiceItemSchema = new mongoose.Schema(
@@ -17,12 +18,14 @@ const invoiceSchema = new mongoose.Schema(
     poNumber: { type: String, required: true, trim: true },
     invoiceDate: { type: Date, required: true },
     items: [invoiceItemSchema],
-    rawParsed: { type: mongoose.Schema.Types.Mixed }
+    rawParsed: { type: mongoose.Schema.Types.Mixed },
+    ...documentFileFields
   },
   { timestamps: true }
 );
 
-invoiceSchema.index({ poNumber: 1, invoiceNumber: 1 }, { unique: true });
+// Not unique — see grn.js for why: duplicates must be storable, not rejected.
+invoiceSchema.index({ poNumber: 1, invoiceNumber: 1 });
 
 const Invoice = mongoose.model('Invoice', invoiceSchema);
 export default Invoice;
