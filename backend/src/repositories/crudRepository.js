@@ -1,3 +1,5 @@
+import mongoose from 'mongoose';
+
 export default function crudRepository(model) {
     return {
       create: async function (data) {
@@ -9,14 +11,17 @@ export default function crudRepository(model) {
         return allDocs;
       },
       getById: async function (id) {
+        if (!mongoose.isValidObjectId(id)) return null;
         const doc = await model.findById(id);
         return doc;
       },
       delete: async function (id) {
+        if (!mongoose.isValidObjectId(id)) return null;
         const response = await model.findByIdAndDelete(id);
         return response;
       },
       update: async function (id, data) {
+        if (!mongoose.isValidObjectId(id)) return null;
         const updatedDoc = await model.findByIdAndUpdate(id, data, {
           new: true
         });
