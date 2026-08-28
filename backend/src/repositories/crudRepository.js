@@ -6,8 +6,8 @@ export default function crudRepository(model) {
         const newDoc = await model.create(data);
         return newDoc;
       },
-      getAll: async function () {
-        const allDocs = await model.find();
+      getAll: async function (filter = {}) {
+        const allDocs = await model.find(filter);
         return allDocs;
       },
       getById: async function (id) {
@@ -23,7 +23,7 @@ export default function crudRepository(model) {
       update: async function (id, data) {
         if (!mongoose.isValidObjectId(id)) return null;
         const updatedDoc = await model.findByIdAndUpdate(id, data, {
-          new: true
+          returnDocument: 'after'
         });
         return updatedDoc;
       },

@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 
+import { documentFileFields } from './shared/documentFileFields.js';
 import { itemBaseFields } from './shared/itemBaseFields.js';
 
 const poItemSchema = new mongoose.Schema(
@@ -11,11 +12,12 @@ const poItemSchema = new mongoose.Schema(
 
 const purchaseOrderSchema = new mongoose.Schema(
   {
-    poNumber: { type: String, required: true, unique: true, trim: true },
+    poNumber: { type: String, required: true, trim: true, index: true },
     poDate: { type: Date, required: true },
     vendorName: { type: String, required: true },
     items: [poItemSchema],
-    rawParsed: { type: mongoose.Schema.Types.Mixed }
+    rawParsed: { type: mongoose.Schema.Types.Mixed },
+    ...documentFileFields
   },
   { timestamps: true }
 );
