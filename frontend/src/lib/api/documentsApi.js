@@ -1,4 +1,4 @@
-import { apiRequest } from '@/lib/apiClient';
+import { apiRequest, apiRequestBlob } from '@/lib/apiClient';
 
 export const getDocuments = ({ token, type, poNumber }) => {
   const params = new URLSearchParams();
@@ -21,3 +21,6 @@ export const uploadDocument = ({ token, documentType, file }) => {
     isFormData: true
   });
 };
+
+export const getDocumentFileBlob = ({ token, documentId }) =>
+  apiRequestBlob(`/documents/${documentId}/file`, { token });
