@@ -1,0 +1,2426 @@
+{
+  "poNumber": "CI4PO05788",
+  "status": "mismatch",
+  "reasons": [
+    "duplicate_document",
+    "invoice_date_after_po_date",
+    "unmapped_master_sku",
+    "item_missing_in_po",
+    "invoice_qty_exceeds_grn_qty"
+  ],
+  "linkedDocuments": {
+    "pos": [
+      {
+        "_id": "6a9184fa551fc3dfb488d54d",
+        "poNumber": "CI4PO05788",
+        "poDate": "2026-03-17T00:00:00.000Z",
+        "vendorName": "M/s AFP",
+        "items": [
+          {
+            "itemCode": "11423 psm",
+            "description": "Cheesy Spicy Veg Momos 24.0 Pieces Colour: Size: size Brand:Band_2",
+            "skuMaster": null,
+            "quantity": 50,
+            "_id": "6a9184fa551fc3dfb488d54e"
+          },
+          {
+            "itemCode": "11797 psm",
+            "description": "Meatigo Hot Wings 250.0 g Colour: Size: size Brand:Band_3",
+            "skuMaster": null,
+            "quantity": 75,
+            "_id": "6a9184fa551fc3dfb488d54f"
+          },
+          {
+            "itemCode": "18003 psm",
+            "description": "Meatigo Chicken Curry Cut Skinless Frozen 450.0 g Colour: Size: size Brand:Band_1",
+            "skuMaster": null,
+            "quantity": 120,
+            "_id": "6a9184fa551fc3dfb488d550"
+          },
+          {
+            "itemCode": "18004 psm",
+            "description": "Meatigo Chicken Boneless Breast Frozen 450.0 g Colour: Size: size Brand:Band_1",
+            "skuMaster": null,
+            "quantity": 540,
+            "_id": "6a9184fa551fc3dfb488d551"
+          },
+          {
+            "itemCode": "18906 psm",
+            "description": "Spring Rolls Veg Frozen 240.0 g Colour: Size: size Brand:Band_4",
+            "skuMaster": null,
+            "quantity": 175,
+            "_id": "6a9184fa551fc3dfb488d552"
+          },
+          {
+            "itemCode": "253430 psm",
+            "description": "Pork Salami 200.0 g Colour: Size: size Brand:",
+            "skuMaster": null,
+            "quantity": 75,
+            "_id": "6a9184fa551fc3dfb488d553"
+          },
+          {
+            "itemCode": "33387 psm",
+            "description": "Frozen Chicken Chilli Salami 200.0 g Colour: Size: size Brand:TORSO",
+            "skuMaster": null,
+            "quantity": 75,
+            "_id": "6a9184fa551fc3dfb488d554"
+          },
+          {
+            "itemCode": "33388 psm",
+            "description": "Frozen Chicken Pepperoni Salami 100.0 g Colour: Size: size Brand:Band_3",
+            "skuMaster": null,
+            "quantity": 120,
+            "_id": "6a9184fa551fc3dfb488d555"
+          },
+          {
+            "itemCode": "33390 psm",
+            "description": "Chicken Seekh Kebab 500.0 g Colour: Size: size Brand:Band_3",
+            "skuMaster": null,
+            "quantity": 272,
+            "_id": "6a9184fa551fc3dfb488d556"
+          },
+          {
+            "itemCode": "398656 psm",
+            "description": "Meatigo Chicken Drumsticks 450.0 g Colour: Size: size Brand:",
+            "skuMaster": null,
+            "quantity": 270,
+            "_id": "6a9184fa551fc3dfb488d557"
+          },
+          {
+            "itemCode": "414867 psm",
+            "description": "Chinese Veg Spring Rolls 240.0 g Colour: Size: size Brand:",
+            "skuMaster": null,
+            "quantity": 25,
+            "_id": "6a9184fa551fc3dfb488d558"
+          },
+          {
+            "itemCode": "432518 psm",
+            "description": "Meatigo Chicken Kheema 450.0 g Colour: Size: size Brand:",
+            "skuMaster": null,
+            "quantity": 360,
+            "_id": "6a9184fa551fc3dfb488d559"
+          },
+          {
+            "itemCode": "4459 psm",
+            "description": "Original Chicken Momos 24.0 Pieces Colour: Size: size Brand:Band_1",
+            "skuMaster": null,
+            "quantity": 475,
+            "_id": "6a9184fa551fc3dfb488d55a"
+          },
+          {
+            "itemCode": "4460 psm",
+            "description": "Spicy Chicken Momos 24.0 Pieces Colour: Size: size Brand:Band_1",
+            "skuMaster": null,
+            "quantity": 325,
+            "_id": "6a9184fa551fc3dfb488d55b"
+          },
+          {
+            "itemCode": "4461 psm",
+            "description": "Veg & Paneer Momos 24.0 Pieces Colour: Size: size Brand:Band_2",
+            "skuMaster": null,
+            "quantity": 75,
+            "_id": "6a9184fa551fc3dfb488d55c"
+          },
+          {
+            "itemCode": "453259 psm",
+            "description": "Chicken Cheese & Onion Sausage 250.0 g Colour: Size: size Brand:",
+            "skuMaster": null,
+            "quantity": 40,
+            "_id": "6a9184fa551fc3dfb488d55d"
+          },
+          {
+            "itemCode": "4694 psm",
+            "description": "Original Chicken Momos 10.0 Pieces Colour: Size: size Brand:Band_4",
+            "skuMaster": null,
+            "quantity": 450,
+            "_id": "6a9184fa551fc3dfb488d55e"
+          },
+          {
+            "itemCode": "4695 psm",
+            "description": "Spicy Chicken Momos 10.0 Pieces Colour: Size: size Brand:Band_3",
+            "skuMaster": null,
+            "quantity": 100,
+            "_id": "6a9184fa551fc3dfb488d55f"
+          },
+          {
+            "itemCode": "4697 psm",
+            "description": "Veg & Paneer Momos 10.0 Pieces Colour: Size: size Brand:Band_2",
+            "skuMaster": null,
+            "quantity": 400,
+            "_id": "6a9184fa551fc3dfb488d560"
+          },
+          {
+            "itemCode": "469735 psm",
+            "description": "Meatigo Everyday Chicken Breast (Frozen) 150.0 g Colour: Size: size Brand:",
+            "skuMaster": null,
+            "quantity": 90,
+            "_id": "6a9184fa551fc3dfb488d561"
+          },
+          {
+            "itemCode": "4698 psm",
+            "description": "Chicken Ham 200.0 g Colour: Size: size Brand:Band_1",
+            "skuMaster": null,
+            "quantity": 150,
+            "_id": "6a9184fa551fc3dfb488d562"
+          },
+          {
+            "itemCode": "4699 psm",
+            "description": "Pork Sausage 250.0 g Colour: Size: size Brand:Band_2",
+            "skuMaster": null,
+            "quantity": 40,
+            "_id": "6a9184fa551fc3dfb488d563"
+          },
+          {
+            "itemCode": "4700 psm",
+            "description": "Pork Ham 200.0 g Colour: Size: size Brand:Band_1",
+            "skuMaster": null,
+            "quantity": 50,
+            "_id": "6a9184fa551fc3dfb488d564"
+          },
+          {
+            "itemCode": "4701 psm",
+            "description": "Pork Breakfast Bacon 300.0 g Colour: Size: size Brand:Band_1",
+            "skuMaster": null,
+            "quantity": 20,
+            "_id": "6a9184fa551fc3dfb488d565"
+          },
+          {
+            "itemCode": "470663 psm",
+            "description": "Whole Wheat Momos - Veg & Paneer 330.0 g Colour: Size: size Brand:",
+            "skuMaster": null,
+            "quantity": 80,
+            "_id": "6a9184fa551fc3dfb488d566"
+          },
+          {
+            "itemCode": "489632 psm",
+            "description": "Tandoori Momos - Chicken 280.0 g Colour: Size: size Brand:",
+            "skuMaster": null,
+            "quantity": 35,
+            "_id": "6a9184fa551fc3dfb488d567"
+          },
+          {
+            "itemCode": "49168 psm",
+            "description": "Peri Peri Veg Momos 15.0 Pieces Colour: Size: size Brand:Band_2",
+            "skuMaster": null,
+            "quantity": 80,
+            "_id": "6a9184fa551fc3dfb488d568"
+          },
+          {
+            "itemCode": "498695 psm",
+            "description": "Chicken Salami 200.0 g Colour: Size: size Brand:",
+            "skuMaster": null,
+            "quantity": 25,
+            "_id": "6a9184fa551fc3dfb488d569"
+          },
+          {
+            "itemCode": "526303 psm",
+            "description": "Chicken Pepper & Herb Sausage 250.0 g Colour: Size: size Brand:",
+            "skuMaster": null,
+            "quantity": 20,
+            "_id": "6a9184fa551fc3dfb488d56a"
+          },
+          {
+            "itemCode": "598770 psm",
+            "description": "Pork Breakfast Bacon 150.0 g Colour: Size: size Brand:",
+            "skuMaster": null,
+            "quantity": 36,
+            "_id": "6a9184fa551fc3dfb488d56b"
+          },
+          {
+            "itemCode": "6664 psm",
+            "description": "Chicken Sausages 250.0 g Colour: Size: size Brand:Band_2",
+            "skuMaster": null,
+            "quantity": 380,
+            "_id": "6a9184fa551fc3dfb488d56c"
+          },
+          {
+            "itemCode": "6665 psm",
+            "description": "Chicken Cheese & Chilli Sausages 250.0 g Colour: Size: size Brand:Band_3",
+            "skuMaster": null,
+            "quantity": 100,
+            "_id": "6a9184fa551fc3dfb488d56d"
+          },
+          {
+            "itemCode": "730016 psm",
+            "description": "Whole Wheat Chicken Momos 330.0 g Colour: Size: size Brand:",
+            "skuMaster": null,
+            "quantity": 80,
+            "_id": "6a9184fa551fc3dfb488d56e"
+          },
+          {
+            "itemCode": "750414 psm",
+            "description": "Super Saver Chicken Momo Pack (Chef Momos) 1.0 kg Colour: Size: size Brand:",
+            "skuMaster": null,
+            "quantity": 72,
+            "_id": "6a9184fa551fc3dfb488d56f"
+          },
+          {
+            "itemCode": "755774 psm",
+            "description": "Chicken & Cheese Momos 540.0 g Colour: Size: size Brand:",
+            "skuMaster": null,
+            "quantity": 25,
+            "_id": "6a9184fa551fc3dfb488d570"
+          },
+          {
+            "itemCode": "790919 psm",
+            "description": "Meatigo Everyday Fish Fillet 200.0 g Colour: Size: size Brand:",
+            "skuMaster": null,
+            "quantity": 30,
+            "_id": "6a9184fa551fc3dfb488d571"
+          },
+          {
+            "itemCode": "81521 psm",
+            "description": "Peri Peri Chicken Momos 250.0 g Colour: Size: size Brand:Band_4",
+            "skuMaster": null,
+            "quantity": 640,
+            "_id": "6a9184fa551fc3dfb488d572"
+          },
+          {
+            "itemCode": "89201 psm",
+            "description": "Chicken English Breakfast Sausage 1.0 kg Colour: Size: size Brand:Band_2",
+            "skuMaster": null,
+            "quantity": 162,
+            "_id": "6a9184fa551fc3dfb488d573"
+          },
+          {
+            "itemCode": "205950 psm",
+            "description": "Frozen Pork Pepperoni Salami 100.0 g Colour: Size: size Brand:Band_5",
+            "skuMaster": null,
+            "quantity": 40,
+            "_id": "6a9184fa551fc3dfb488d574"
+          },
+          {
+            "itemCode": "507809 psm",
+            "description": "Pizza Minis - Chicken Tikka 180.0 g Colour: Size: size Brand:Band_6",
+            "skuMaster": null,
+            "quantity": 50,
+            "_id": "6a9184fa551fc3dfb488d575"
+          }
+        ],
+        "filePath": "<uploads-dir>/3469c8f5-9c63-4ba9-93c1-dee08c5caab0.pdf",
+        "originalFileName": "PO (1).pdf",
+        "fileMimeType": "application/pdf",
+        "createdAt": "2026-08-28T12:54:18.092Z",
+        "updatedAt": "2026-08-28T12:54:18.092Z",
+        "__v": 0
+      }
+    ],
+    "grns": [
+      {
+        "_id": "6a9185a2551fc3dfb488d666",
+        "grnNumber": "CI4000020234",
+        "poNumber": "CI4PO05788",
+        "grnDate": "2026-03-24T00:00:00.000Z",
+        "items": [
+          {
+            "itemCode": "11423",
+            "description": "psm Cheesy Spicy Veg Momos 24.0 Pieces",
+            "skuMaster": null,
+            "receivedQuantity": 50,
+            "mrp": 305,
+            "_id": "6a9185a2551fc3dfb488d667"
+          },
+          {
+            "itemCode": "11797",
+            "description": "Meatigo Hot Wings 250.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 75,
+            "mrp": 175,
+            "_id": "6a9185a2551fc3dfb488d668"
+          },
+          {
+            "itemCode": "18003",
+            "description": "Meatigo Chicken Curry Cut Skinless Frozen 450.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 30,
+            "mrp": 195,
+            "_id": "6a9185a2551fc3dfb488d669"
+          },
+          {
+            "itemCode": "18004",
+            "description": "Meatigo Chicken Boneless Breast Frozen 450.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 30,
+            "mrp": 275,
+            "_id": "6a9185a2551fc3dfb488d66a"
+          },
+          {
+            "itemCode": "205950",
+            "description": "psm Frozen Pork Pepperoni Salami 100.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 40,
+            "mrp": 185,
+            "_id": "6a9185a2551fc3dfb488d66b"
+          },
+          {
+            "itemCode": "253430",
+            "description": "psm Pork Salami 200.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 75,
+            "mrp": 260,
+            "_id": "6a9185a2551fc3dfb488d66c"
+          },
+          {
+            "itemCode": "33387",
+            "description": "psm Frozen Chicken Chilli Salami 200.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 75,
+            "mrp": 175,
+            "_id": "6a9185a2551fc3dfb488d66d"
+          },
+          {
+            "itemCode": "33390",
+            "description": "psm Chicken Seekh Kebab 500.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 272,
+            "mrp": 315,
+            "_id": "6a9185a2551fc3dfb488d66e"
+          },
+          {
+            "itemCode": "398656",
+            "description": "Meatigo Chicken Drumsticks 450.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 270,
+            "mrp": 260,
+            "_id": "6a9185a2551fc3dfb488d66f"
+          },
+          {
+            "itemCode": "414867",
+            "description": "psm Chinese Veg Spring Rolls 240.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 25,
+            "mrp": 165,
+            "_id": "6a9185a2551fc3dfb488d670"
+          },
+          {
+            "itemCode": "432518",
+            "description": "Meatigo Chicken Kheema 450.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 360,
+            "mrp": 275,
+            "_id": "6a9185a2551fc3dfb488d671"
+          },
+          {
+            "itemCode": "4459",
+            "description": "psm Original Chicken Momos 24.0 Pieces",
+            "skuMaster": null,
+            "receivedQuantity": 475,
+            "mrp": 305,
+            "_id": "6a9185a2551fc3dfb488d672"
+          },
+          {
+            "itemCode": "4460",
+            "description": "psm Spicy Chicken Momos 24.0 Pieces",
+            "skuMaster": null,
+            "receivedQuantity": 325,
+            "mrp": 305,
+            "_id": "6a9185a2551fc3dfb488d673"
+          },
+          {
+            "itemCode": "4461",
+            "description": "psm Veg & Paneer Momos 24.0 Pieces",
+            "skuMaster": null,
+            "receivedQuantity": 75,
+            "mrp": 280,
+            "_id": "6a9185a2551fc3dfb488d674"
+          },
+          {
+            "itemCode": "453259",
+            "description": "psm Chicken Cheese & Onion Sausage 250.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 40,
+            "mrp": 200,
+            "_id": "6a9185a2551fc3dfb488d675"
+          },
+          {
+            "itemCode": "4694",
+            "description": "psm Original Chicken Momos 10.0 Pieces",
+            "skuMaster": null,
+            "receivedQuantity": 450,
+            "mrp": 185,
+            "_id": "6a9185a2551fc3dfb488d676"
+          },
+          {
+            "itemCode": "4697",
+            "description": "psm Veg & Paneer Momos 10.0 Pieces",
+            "skuMaster": null,
+            "receivedQuantity": 400,
+            "mrp": 155,
+            "_id": "6a9185a2551fc3dfb488d677"
+          },
+          {
+            "itemCode": "469735",
+            "description": "Meatigo Everyday Chicken Breast (Frozen) 150.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 90,
+            "mrp": 165,
+            "_id": "6a9185a2551fc3dfb488d678"
+          },
+          {
+            "itemCode": "4699",
+            "description": "psm Pork Sausage 250.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 40,
+            "mrp": 235,
+            "_id": "6a9185a2551fc3dfb488d679"
+          },
+          {
+            "itemCode": "4700",
+            "description": "psm Pork Ham 200.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 50,
+            "mrp": 245,
+            "_id": "6a9185a2551fc3dfb488d67a"
+          },
+          {
+            "itemCode": "470663",
+            "description": "psm Whole Wheat Momos - Veg & Paneer 330.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 40,
+            "mrp": 225,
+            "_id": "6a9185a2551fc3dfb488d67b"
+          },
+          {
+            "itemCode": "49168",
+            "description": "psm Peri Peri Veg Momos 15.0 Pieces",
+            "skuMaster": null,
+            "receivedQuantity": 80,
+            "mrp": 245,
+            "_id": "6a9185a2551fc3dfb488d67c"
+          },
+          {
+            "itemCode": "498695",
+            "description": "psm Chicken Salami 200.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 25,
+            "mrp": 190,
+            "_id": "6a9185a2551fc3dfb488d67d"
+          },
+          {
+            "itemCode": "507809",
+            "description": "psm Pizza Minis - Chicken Tikka 180.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 50,
+            "mrp": 159,
+            "_id": "6a9185a2551fc3dfb488d67e"
+          },
+          {
+            "itemCode": "598770",
+            "description": "psm Pork Breakfast Bacon 150.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 36,
+            "mrp": 210,
+            "_id": "6a9185a2551fc3dfb488d67f"
+          },
+          {
+            "itemCode": "6664",
+            "description": "psm Chicken Sausages 250.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 380,
+            "mrp": 180,
+            "_id": "6a9185a2551fc3dfb488d680"
+          },
+          {
+            "itemCode": "730016",
+            "description": "psm Whole Wheat Chicken Momos 330.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 80,
+            "mrp": 235,
+            "_id": "6a9185a2551fc3dfb488d681"
+          },
+          {
+            "itemCode": "750414",
+            "description": "psm Super Saver Chicken Momo Pack (Chef Momos) 1.0 kg",
+            "skuMaster": null,
+            "receivedQuantity": 72,
+            "mrp": 650,
+            "_id": "6a9185a2551fc3dfb488d682"
+          },
+          {
+            "itemCode": "755774",
+            "description": "psm Chicken & Cheese Momos 540.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 25,
+            "mrp": 330,
+            "_id": "6a9185a2551fc3dfb488d683"
+          },
+          {
+            "itemCode": "790919",
+            "description": "Meatigo Everyday Fish Fillet 200.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 30,
+            "mrp": 260,
+            "_id": "6a9185a2551fc3dfb488d684"
+          },
+          {
+            "itemCode": "81521",
+            "description": "psm Peri Peri Chicken Momos 250.0 g",
+            "skuMaster": null,
+            "receivedQuantity": 640,
+            "mrp": 199,
+            "_id": "6a9185a2551fc3dfb488d685"
+          }
+        ],
+        "filePath": "<uploads-dir>/7fd98877-401e-4650-a6b5-d5b335fbf7a4.pdf",
+        "originalFileName": "GRN (1).pdf",
+        "fileMimeType": "application/pdf",
+        "createdAt": "2026-08-28T12:57:06.591Z",
+        "updatedAt": "2026-08-28T12:57:06.591Z",
+        "__v": 0
+      }
+    ],
+    "invoices": [
+      {
+        "_id": "6a9185c5551fc3dfb488d686",
+        "invoiceNumber": "IN25MH2504251",
+        "poNumber": "CI4PO05788",
+        "invoiceDate": "2026-03-24T00:00:00.000Z",
+        "items": [
+          {
+            "itemCode": "FG-P-F-0503",
+            "description": "PSM Cheesy Spicy Vegetable Momos 24Pcs",
+            "skuMaster": null,
+            "quantity": 50,
+            "unitRate": 220.76,
+            "_id": "6a9185c5551fc3dfb488d687"
+          },
+          {
+            "itemCode": "FG-M-F-1703",
+            "description": "Meatigo RTC Meatigo Hot Wings 250g",
+            "skuMaster": null,
+            "quantity": 75,
+            "unitRate": 126.67,
+            "_id": "6a9185c5551fc3dfb488d688"
+          },
+          {
+            "itemCode": "FG-M-F-0620",
+            "description": "Meatigo Chicken Curry Cuts 450g (5%)",
+            "skuMaster": null,
+            "quantity": 30,
+            "unitRate": 141.14,
+            "_id": "6a9185c5551fc3dfb488d689"
+          },
+          {
+            "itemCode": "FG-M-F-0619",
+            "description": "Meatigo Chicken Boneless Breast 450g (5%)",
+            "skuMaster": null,
+            "quantity": 30,
+            "unitRate": 199.05,
+            "_id": "6a9185c5551fc3dfb488d68a"
+          },
+          {
+            "itemCode": "FG-P-F-0249",
+            "description": "PSM Pork Plain Salami 200g",
+            "skuMaster": null,
+            "quantity": 75,
+            "unitRate": 188.19,
+            "_id": "6a9185c5551fc3dfb488d68b"
+          },
+          {
+            "itemCode": "FG-P-F-0234",
+            "description": "PSM Frozen Chicken Chilli Salami 200g",
+            "skuMaster": null,
+            "quantity": 75,
+            "unitRate": 126.67,
+            "_id": "6a9185c5551fc3dfb488d68c"
+          },
+          {
+            "itemCode": "FG-P-F-0413",
+            "description": "PSM Frozen Chicken Seekh Kabab 500g",
+            "skuMaster": null,
+            "quantity": 272,
+            "unitRate": 228,
+            "_id": "6a9185c5551fc3dfb488d68d"
+          },
+          {
+            "itemCode": "FG-M-F-0602",
+            "description": "Meatigo Chicken Drumsticks 450g (5%)",
+            "skuMaster": null,
+            "quantity": 270,
+            "unitRate": 188.19,
+            "_id": "6a9185c5551fc3dfb488d68e"
+          },
+          {
+            "itemCode": "FG-P-F-1707",
+            "description": "PSM Spring Roll-Chinese Veg 240g",
+            "skuMaster": null,
+            "quantity": 25,
+            "unitRate": 119.43,
+            "_id": "6a9185c5551fc3dfb488d68f"
+          },
+          {
+            "itemCode": "FG-M-F-0622",
+            "description": "Meatigo Chicken Keema (Mince) 450g (5%)",
+            "skuMaster": null,
+            "quantity": 360,
+            "unitRate": 199.05,
+            "_id": "6a9185c5551fc3dfb488d690"
+          },
+          {
+            "itemCode": "FG-P-F-0505",
+            "description": "PSM Chicken Momos 24Pcs",
+            "skuMaster": null,
+            "quantity": 475,
+            "unitRate": 220.76,
+            "_id": "6a9185c5551fc3dfb488d691"
+          },
+          {
+            "itemCode": "FG-P-F-0512",
+            "description": "PSM Spicy Chicken Momos 24Pcs",
+            "skuMaster": null,
+            "quantity": 325,
+            "unitRate": 220.76,
+            "_id": "6a9185c5551fc3dfb488d692"
+          },
+          {
+            "itemCode": "FG-P-F-0514",
+            "description": "PSM Vegetable & Paneer Momos 24Pcs",
+            "skuMaster": null,
+            "quantity": 75,
+            "unitRate": 202.67,
+            "_id": "6a9185c5551fc3dfb488d693"
+          },
+          {
+            "itemCode": "FG-P-F-0335",
+            "description": "PSM Chicken Cheese & Onion Sausage 250g",
+            "skuMaster": null,
+            "quantity": 40,
+            "unitRate": 144.76,
+            "_id": "6a9185c5551fc3dfb488d694"
+          },
+          {
+            "itemCode": "FG-P-F-0504",
+            "description": "PSM Chicken Momos 10Pcs",
+            "skuMaster": null,
+            "quantity": 450,
+            "unitRate": 133.9,
+            "_id": "6a9185c5551fc3dfb488d695"
+          },
+          {
+            "itemCode": "FG-P-F-0513",
+            "description": "PSM Vegetable & Paneer Momos 10Pcs",
+            "skuMaster": null,
+            "quantity": 400,
+            "unitRate": 112.19,
+            "_id": "6a9185c5551fc3dfb488d696"
+          },
+          {
+            "itemCode": "FG-M-F-1728",
+            "description": "Meatigo RTC Everyday Chicken Breast 150g",
+            "skuMaster": null,
+            "quantity": 90,
+            "unitRate": 119.43,
+            "_id": "6a9185c5551fc3dfb488d697"
+          },
+          {
+            "itemCode": "FG-P-F-0323",
+            "description": "PSM Frozen Pork Sausage 250g",
+            "skuMaster": null,
+            "quantity": 40,
+            "unitRate": 170.1,
+            "_id": "6a9185c5551fc3dfb488d698"
+          },
+          {
+            "itemCode": "FG-P-F-0236",
+            "description": "PSM Frozen Pork Ham 200g",
+            "skuMaster": null,
+            "quantity": 50,
+            "unitRate": 177.33,
+            "_id": "6a9185c5551fc3dfb488d699"
+          },
+          {
+            "itemCode": "FG-P-F-0580",
+            "description": "PSM Whole Wheat Momos-Veg & Paneer 330g",
+            "skuMaster": null,
+            "quantity": 40,
+            "unitRate": 162.86,
+            "_id": "6a9185c5551fc3dfb488d69a"
+          },
+          {
+            "itemCode": "FG-P-F-0527",
+            "description": "PSM Peri Peri Veg Momos 15Pcs",
+            "skuMaster": null,
+            "quantity": 80,
+            "unitRate": 88.67,
+            "_id": "6a9185c5551fc3dfb488d69b"
+          },
+          {
+            "itemCode": "FG-P-F-0247",
+            "description": "PSM Frozen Chicken Salami 200g",
+            "skuMaster": null,
+            "quantity": 25,
+            "unitRate": 137.52,
+            "_id": "6a9185c5551fc3dfb488d69c"
+          },
+          {
+            "itemCode": "FG-P-F-0102",
+            "description": "PSM Frozen Pork Breakfast Bacon 150g",
+            "skuMaster": null,
+            "quantity": 36,
+            "unitRate": 152,
+            "_id": "6a9185c5551fc3dfb488d69d"
+          },
+          {
+            "itemCode": "FG-P-F-0321",
+            "description": "PSM Frozen Chicken Sausage 250g",
+            "skuMaster": null,
+            "quantity": 380,
+            "unitRate": 130.29,
+            "_id": "6a9185c5551fc3dfb488d69e"
+          },
+          {
+            "itemCode": "FG-P-F-0581",
+            "description": "PSM Whole Wheat Momos-Chicken 330g",
+            "skuMaster": null,
+            "quantity": 80,
+            "unitRate": 170.1,
+            "_id": "6a9185c5551fc3dfb488d69f"
+          },
+          {
+            "itemCode": "FG-P-F-0501",
+            "description": "PSM FS Chef Momo-Chicken 1kg",
+            "skuMaster": null,
+            "quantity": 72,
+            "unitRate": 247.62,
+            "_id": "6a9185c5551fc3dfb488d6a0"
+          },
+          {
+            "itemCode": "FG-P-F-0564",
+            "description": "PSM Cheese & Chicken Momos 540g",
+            "skuMaster": null,
+            "quantity": 25,
+            "unitRate": 238.86,
+            "_id": "6a9185c5551fc3dfb488d6a1"
+          },
+          {
+            "itemCode": "FG-M-F-1729",
+            "description": "Meatigo RTC Everyday Fish Fillet 200g",
+            "skuMaster": null,
+            "quantity": 30,
+            "unitRate": 188.19,
+            "_id": "6a9185c5551fc3dfb488d6a2"
+          },
+          {
+            "itemCode": "FG-P-F-0542",
+            "description": "Peri Peri Chicken Momos 250g",
+            "skuMaster": null,
+            "quantity": 640,
+            "unitRate": 72.02,
+            "_id": "6a9185c5551fc3dfb488d6a3"
+          },
+          {
+            "itemCode": "FG-P-F-0237",
+            "description": "PSM Frozen Pork Pepperoni Salami 100g",
+            "skuMaster": null,
+            "quantity": 40,
+            "unitRate": 133.9,
+            "_id": "6a9185c5551fc3dfb488d6a4"
+          },
+          {
+            "itemCode": "FG-P-F-1911",
+            "description": "PSM Pizza Minis-Chicken Tikka 180g",
+            "skuMaster": null,
+            "quantity": 50,
+            "unitRate": 115.09,
+            "_id": "6a9185c5551fc3dfb488d6a5"
+          }
+        ],
+        "filePath": "<uploads-dir>/fee138e6-dff9-4d67-8475-35193479dfe6.pdf",
+        "originalFileName": "Invoice (1).pdf",
+        "fileMimeType": "application/pdf",
+        "createdAt": "2026-08-28T12:57:41.228Z",
+        "updatedAt": "2026-08-28T12:57:41.228Z",
+        "__v": 0
+      },
+      {
+        "_id": "6a918f426abcbd874df0a622",
+        "invoiceNumber": "IN25MH2504251",
+        "poNumber": "CI4PO05788",
+        "invoiceDate": "2026-03-24T00:00:00.000Z",
+        "items": [
+          {
+            "itemCode": "FG-P-F-0503",
+            "description": "PSMCheesySpicyVegetableMomos24Pcs",
+            "skuMaster": null,
+            "quantity": 50,
+            "unitRate": 220.76,
+            "_id": "6a918f426abcbd874df0a623"
+          },
+          {
+            "itemCode": "FG-M-F-1703",
+            "description": "Meatigo RTC Meatigo Hot Wings 250g",
+            "skuMaster": null,
+            "quantity": 75,
+            "unitRate": 126.67,
+            "_id": "6a918f426abcbd874df0a624"
+          },
+          {
+            "itemCode": "FG-M-F-0620",
+            "description": "Meatigo Chicken Curry Cuts 450g (5%)",
+            "skuMaster": null,
+            "quantity": 30,
+            "unitRate": 141.14,
+            "_id": "6a918f426abcbd874df0a625"
+          },
+          {
+            "itemCode": "FG-M-F-0619",
+            "description": "Meatigo Chicken Boneless Breast 450g (5%)",
+            "skuMaster": null,
+            "quantity": 30,
+            "unitRate": 199.05,
+            "_id": "6a918f426abcbd874df0a626"
+          },
+          {
+            "itemCode": "FG-P-F-0249",
+            "description": "PSMPorkPlainSalami200g",
+            "skuMaster": null,
+            "quantity": 75,
+            "unitRate": 188.19,
+            "_id": "6a918f426abcbd874df0a627"
+          },
+          {
+            "itemCode": "FG-P-F-0234",
+            "description": "PSMFrozenChickenChilliSalami200g",
+            "skuMaster": null,
+            "quantity": 75,
+            "unitRate": 126.67,
+            "_id": "6a918f426abcbd874df0a628"
+          },
+          {
+            "itemCode": "FG-P-F-0413",
+            "description": "PSMFrozenChickenSeekhKabab500g",
+            "skuMaster": null,
+            "quantity": 272,
+            "unitRate": 228,
+            "_id": "6a918f426abcbd874df0a629"
+          },
+          {
+            "itemCode": "FG-M-F-0602",
+            "description": "Meatigo Chicken Drumsticks 450g (5%)",
+            "skuMaster": null,
+            "quantity": 270,
+            "unitRate": 188.19,
+            "_id": "6a918f426abcbd874df0a62a"
+          },
+          {
+            "itemCode": "FG-P-F-1707",
+            "description": "PSMSpringRoll-ChineseVeg240g",
+            "skuMaster": null,
+            "quantity": 25,
+            "unitRate": 119.43,
+            "_id": "6a918f426abcbd874df0a62b"
+          },
+          {
+            "itemCode": "FG-M-F-0622",
+            "description": "Meatigo Chicken Keema (Mince) 450g (5%)",
+            "skuMaster": null,
+            "quantity": 360,
+            "unitRate": 199.05,
+            "_id": "6a918f426abcbd874df0a62c"
+          },
+          {
+            "itemCode": "FG-P-F-0505",
+            "description": "PSMChicken Momos24Pcs",
+            "skuMaster": null,
+            "quantity": 475,
+            "unitRate": 220.76,
+            "_id": "6a918f426abcbd874df0a62d"
+          },
+          {
+            "itemCode": "FG-P-F-0512",
+            "description": "PSMSpicyChicken Momos24Pcs",
+            "skuMaster": null,
+            "quantity": 325,
+            "unitRate": 220.76,
+            "_id": "6a918f426abcbd874df0a62e"
+          },
+          {
+            "itemCode": "FG-P-F-0514",
+            "description": "PSMVegetable&PaneerMomos24Pcs",
+            "skuMaster": null,
+            "quantity": 75,
+            "unitRate": 202.67,
+            "_id": "6a918f426abcbd874df0a62f"
+          },
+          {
+            "itemCode": "FG-P-F-0335",
+            "description": "PSMChickenCheese&OnionSausage250g",
+            "skuMaster": null,
+            "quantity": 40,
+            "unitRate": 144.76,
+            "_id": "6a918f426abcbd874df0a630"
+          },
+          {
+            "itemCode": "FG-P-F-0504",
+            "description": "PSMChicken Momos10Pcs",
+            "skuMaster": null,
+            "quantity": 450,
+            "unitRate": 133.9,
+            "_id": "6a918f426abcbd874df0a631"
+          },
+          {
+            "itemCode": "FG-P-F-0513",
+            "description": "PSMVegetable&PaneerMomos10Pcs",
+            "skuMaster": null,
+            "quantity": 400,
+            "unitRate": 112.19,
+            "_id": "6a918f426abcbd874df0a632"
+          },
+          {
+            "itemCode": "FG-M-F-1728",
+            "description": "Meatigo RTC Everyday Chicken Breast 150g",
+            "skuMaster": null,
+            "quantity": 90,
+            "unitRate": 119.43,
+            "_id": "6a918f426abcbd874df0a633"
+          },
+          {
+            "itemCode": "FG-P-F-0323",
+            "description": "PSMFrozenPorkSausage250g",
+            "skuMaster": null,
+            "quantity": 40,
+            "unitRate": 170.1,
+            "_id": "6a918f426abcbd874df0a634"
+          },
+          {
+            "itemCode": "FG-P-F-0236",
+            "description": "PSMFrozenPorkHam200g",
+            "skuMaster": null,
+            "quantity": 50,
+            "unitRate": 177.33,
+            "_id": "6a918f426abcbd874df0a635"
+          },
+          {
+            "itemCode": "FG-P-F-0580",
+            "description": "PSMWholeWheatMomos-Veg&Paneer330g",
+            "skuMaster": null,
+            "quantity": 40,
+            "unitRate": 162.86,
+            "_id": "6a918f426abcbd874df0a636"
+          },
+          {
+            "itemCode": "FG-P-F-0527",
+            "description": "PSMPeri PeriVegMomos15Pcs",
+            "skuMaster": null,
+            "quantity": 80,
+            "unitRate": 88.67,
+            "_id": "6a918f426abcbd874df0a637"
+          },
+          {
+            "itemCode": "FG-P-F-0247",
+            "description": "PSMFrozenChickenSalami200g",
+            "skuMaster": null,
+            "quantity": 25,
+            "unitRate": 137.52,
+            "_id": "6a918f426abcbd874df0a638"
+          },
+          {
+            "itemCode": "FG-P-F-0102",
+            "description": "PSMFrozenPorkBreakfastBacon150g",
+            "skuMaster": null,
+            "quantity": 36,
+            "unitRate": 152,
+            "_id": "6a918f426abcbd874df0a639"
+          },
+          {
+            "itemCode": "FG-P-F-0321",
+            "description": "PSMFrozenChickenSausage250g",
+            "skuMaster": null,
+            "quantity": 380,
+            "unitRate": 130.29,
+            "_id": "6a918f426abcbd874df0a63a"
+          },
+          {
+            "itemCode": "FG-P-F-0581",
+            "description": "PSMWholeWheatMomos-Chicken330g",
+            "skuMaster": null,
+            "quantity": 80,
+            "unitRate": 170.1,
+            "_id": "6a918f426abcbd874df0a63b"
+          },
+          {
+            "itemCode": "FG-P-F-0501",
+            "description": "PSMFSChefMomo-Chicken1kg",
+            "skuMaster": null,
+            "quantity": 72,
+            "unitRate": 247.62,
+            "_id": "6a918f426abcbd874df0a63c"
+          },
+          {
+            "itemCode": "FG-P-F-0564",
+            "description": "PSMCheese&Chicken Momos540g",
+            "skuMaster": null,
+            "quantity": 25,
+            "unitRate": 238.86,
+            "_id": "6a918f426abcbd874df0a63d"
+          },
+          {
+            "itemCode": "FG-M-F-1729",
+            "description": "Meatigo RTC Everyday Fish Fillet 200g",
+            "skuMaster": null,
+            "quantity": 30,
+            "unitRate": 188.19,
+            "_id": "6a918f426abcbd874df0a63e"
+          },
+          {
+            "itemCode": "FG-P-F-0542",
+            "description": "Peri Peri Chicken Momos 250g",
+            "skuMaster": null,
+            "quantity": 640,
+            "unitRate": 72.02,
+            "_id": "6a918f426abcbd874df0a63f"
+          },
+          {
+            "itemCode": "FG-P-F-0237",
+            "description": "PSMFrozenPorkPepperoniSalami100g",
+            "skuMaster": null,
+            "quantity": 40,
+            "unitRate": 133.9,
+            "_id": "6a918f426abcbd874df0a640"
+          },
+          {
+            "itemCode": "FG-P-F-1911",
+            "description": "PSMPizzaMinis-ChickenTikka180g",
+            "skuMaster": null,
+            "quantity": 50,
+            "unitRate": 115.09,
+            "_id": "6a918f426abcbd874df0a641"
+          }
+        ],
+        "filePath": "<uploads-dir>/71770a1e-420e-4c77-aad4-6fd92d61de8c.pdf",
+        "originalFileName": "Invoice (1).pdf",
+        "fileMimeType": "application/pdf",
+        "createdAt": "2026-08-28T13:38:10.245Z",
+        "updatedAt": "2026-08-28T13:38:10.245Z",
+        "__v": 0
+      }
+    ]
+  },
+  "items": [
+    {
+      "key": "6a9195b0e5ca0054525cb486",
+      "skuMaster": {
+        "_id": "6a9195b0e5ca0054525cb486",
+        "skuErpCode": "11423 psm",
+        "name": "Cheesy Spicy Veg Momos 24pc",
+        "agreedRate": 100,
+        "mrp": 120,
+        "priceTolerance": 0.05,
+        "createdAt": "2026-08-28T14:05:36.652Z",
+        "updatedAt": "2026-08-28T14:05:36.652Z",
+        "__v": 0
+      },
+      "itemCode": "11423 psm",
+      "description": "Cheesy Spicy Veg Momos 24.0 Pieces Colour: Size: size Brand:Band_2",
+      "poQuantity": 50,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": []
+    },
+    {
+      "key": "raw:11797 psm",
+      "skuMaster": null,
+      "itemCode": "11797 psm",
+      "description": "Meatigo Hot Wings 250.0 g Colour: Size: size Brand:Band_3",
+      "poQuantity": 75,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:18003 psm",
+      "skuMaster": null,
+      "itemCode": "18003 psm",
+      "description": "Meatigo Chicken Curry Cut Skinless Frozen 450.0 g Colour: Size: size Brand:Band_1",
+      "poQuantity": 120,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:18004 psm",
+      "skuMaster": null,
+      "itemCode": "18004 psm",
+      "description": "Meatigo Chicken Boneless Breast Frozen 450.0 g Colour: Size: size Brand:Band_1",
+      "poQuantity": 540,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:18906 psm",
+      "skuMaster": null,
+      "itemCode": "18906 psm",
+      "description": "Spring Rolls Veg Frozen 240.0 g Colour: Size: size Brand:Band_4",
+      "poQuantity": 175,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:253430 psm",
+      "skuMaster": null,
+      "itemCode": "253430 psm",
+      "description": "Pork Salami 200.0 g Colour: Size: size Brand:",
+      "poQuantity": 75,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:33387 psm",
+      "skuMaster": null,
+      "itemCode": "33387 psm",
+      "description": "Frozen Chicken Chilli Salami 200.0 g Colour: Size: size Brand:TORSO",
+      "poQuantity": 75,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:33388 psm",
+      "skuMaster": null,
+      "itemCode": "33388 psm",
+      "description": "Frozen Chicken Pepperoni Salami 100.0 g Colour: Size: size Brand:Band_3",
+      "poQuantity": 120,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:33390 psm",
+      "skuMaster": null,
+      "itemCode": "33390 psm",
+      "description": "Chicken Seekh Kebab 500.0 g Colour: Size: size Brand:Band_3",
+      "poQuantity": 272,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:398656 psm",
+      "skuMaster": null,
+      "itemCode": "398656 psm",
+      "description": "Meatigo Chicken Drumsticks 450.0 g Colour: Size: size Brand:",
+      "poQuantity": 270,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:414867 psm",
+      "skuMaster": null,
+      "itemCode": "414867 psm",
+      "description": "Chinese Veg Spring Rolls 240.0 g Colour: Size: size Brand:",
+      "poQuantity": 25,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:432518 psm",
+      "skuMaster": null,
+      "itemCode": "432518 psm",
+      "description": "Meatigo Chicken Kheema 450.0 g Colour: Size: size Brand:",
+      "poQuantity": 360,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:4459 psm",
+      "skuMaster": null,
+      "itemCode": "4459 psm",
+      "description": "Original Chicken Momos 24.0 Pieces Colour: Size: size Brand:Band_1",
+      "poQuantity": 475,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:4460 psm",
+      "skuMaster": null,
+      "itemCode": "4460 psm",
+      "description": "Spicy Chicken Momos 24.0 Pieces Colour: Size: size Brand:Band_1",
+      "poQuantity": 325,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:4461 psm",
+      "skuMaster": null,
+      "itemCode": "4461 psm",
+      "description": "Veg & Paneer Momos 24.0 Pieces Colour: Size: size Brand:Band_2",
+      "poQuantity": 75,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:453259 psm",
+      "skuMaster": null,
+      "itemCode": "453259 psm",
+      "description": "Chicken Cheese & Onion Sausage 250.0 g Colour: Size: size Brand:",
+      "poQuantity": 40,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:4694 psm",
+      "skuMaster": null,
+      "itemCode": "4694 psm",
+      "description": "Original Chicken Momos 10.0 Pieces Colour: Size: size Brand:Band_4",
+      "poQuantity": 450,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:4695 psm",
+      "skuMaster": null,
+      "itemCode": "4695 psm",
+      "description": "Spicy Chicken Momos 10.0 Pieces Colour: Size: size Brand:Band_3",
+      "poQuantity": 100,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:4697 psm",
+      "skuMaster": null,
+      "itemCode": "4697 psm",
+      "description": "Veg & Paneer Momos 10.0 Pieces Colour: Size: size Brand:Band_2",
+      "poQuantity": 400,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:469735 psm",
+      "skuMaster": null,
+      "itemCode": "469735 psm",
+      "description": "Meatigo Everyday Chicken Breast (Frozen) 150.0 g Colour: Size: size Brand:",
+      "poQuantity": 90,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:4698 psm",
+      "skuMaster": null,
+      "itemCode": "4698 psm",
+      "description": "Chicken Ham 200.0 g Colour: Size: size Brand:Band_1",
+      "poQuantity": 150,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:4699 psm",
+      "skuMaster": null,
+      "itemCode": "4699 psm",
+      "description": "Pork Sausage 250.0 g Colour: Size: size Brand:Band_2",
+      "poQuantity": 40,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:4700 psm",
+      "skuMaster": null,
+      "itemCode": "4700 psm",
+      "description": "Pork Ham 200.0 g Colour: Size: size Brand:Band_1",
+      "poQuantity": 50,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:4701 psm",
+      "skuMaster": null,
+      "itemCode": "4701 psm",
+      "description": "Pork Breakfast Bacon 300.0 g Colour: Size: size Brand:Band_1",
+      "poQuantity": 20,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:470663 psm",
+      "skuMaster": null,
+      "itemCode": "470663 psm",
+      "description": "Whole Wheat Momos - Veg & Paneer 330.0 g Colour: Size: size Brand:",
+      "poQuantity": 80,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:489632 psm",
+      "skuMaster": null,
+      "itemCode": "489632 psm",
+      "description": "Tandoori Momos - Chicken 280.0 g Colour: Size: size Brand:",
+      "poQuantity": 35,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:49168 psm",
+      "skuMaster": null,
+      "itemCode": "49168 psm",
+      "description": "Peri Peri Veg Momos 15.0 Pieces Colour: Size: size Brand:Band_2",
+      "poQuantity": 80,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:498695 psm",
+      "skuMaster": null,
+      "itemCode": "498695 psm",
+      "description": "Chicken Salami 200.0 g Colour: Size: size Brand:",
+      "poQuantity": 25,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:526303 psm",
+      "skuMaster": null,
+      "itemCode": "526303 psm",
+      "description": "Chicken Pepper & Herb Sausage 250.0 g Colour: Size: size Brand:",
+      "poQuantity": 20,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:598770 psm",
+      "skuMaster": null,
+      "itemCode": "598770 psm",
+      "description": "Pork Breakfast Bacon 150.0 g Colour: Size: size Brand:",
+      "poQuantity": 36,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:6664 psm",
+      "skuMaster": null,
+      "itemCode": "6664 psm",
+      "description": "Chicken Sausages 250.0 g Colour: Size: size Brand:Band_2",
+      "poQuantity": 380,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:6665 psm",
+      "skuMaster": null,
+      "itemCode": "6665 psm",
+      "description": "Chicken Cheese & Chilli Sausages 250.0 g Colour: Size: size Brand:Band_3",
+      "poQuantity": 100,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:730016 psm",
+      "skuMaster": null,
+      "itemCode": "730016 psm",
+      "description": "Whole Wheat Chicken Momos 330.0 g Colour: Size: size Brand:",
+      "poQuantity": 80,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:750414 psm",
+      "skuMaster": null,
+      "itemCode": "750414 psm",
+      "description": "Super Saver Chicken Momo Pack (Chef Momos) 1.0 kg Colour: Size: size Brand:",
+      "poQuantity": 72,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:755774 psm",
+      "skuMaster": null,
+      "itemCode": "755774 psm",
+      "description": "Chicken & Cheese Momos 540.0 g Colour: Size: size Brand:",
+      "poQuantity": 25,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:790919 psm",
+      "skuMaster": null,
+      "itemCode": "790919 psm",
+      "description": "Meatigo Everyday Fish Fillet 200.0 g Colour: Size: size Brand:",
+      "poQuantity": 30,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:81521 psm",
+      "skuMaster": null,
+      "itemCode": "81521 psm",
+      "description": "Peri Peri Chicken Momos 250.0 g Colour: Size: size Brand:Band_4",
+      "poQuantity": 640,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:89201 psm",
+      "skuMaster": null,
+      "itemCode": "89201 psm",
+      "description": "Chicken English Breakfast Sausage 1.0 kg Colour: Size: size Brand:Band_2",
+      "poQuantity": 162,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:205950 psm",
+      "skuMaster": null,
+      "itemCode": "205950 psm",
+      "description": "Frozen Pork Pepperoni Salami 100.0 g Colour: Size: size Brand:Band_5",
+      "poQuantity": 40,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:507809 psm",
+      "skuMaster": null,
+      "itemCode": "507809 psm",
+      "description": "Pizza Minis - Chicken Tikka 180.0 g Colour: Size: size Brand:Band_6",
+      "poQuantity": 50,
+      "grnQuantity": 0,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku"
+      ]
+    },
+    {
+      "key": "raw:11423",
+      "skuMaster": null,
+      "itemCode": "11423",
+      "description": "psm Cheesy Spicy Veg Momos 24.0 Pieces",
+      "poQuantity": 0,
+      "grnQuantity": 50,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:11797",
+      "skuMaster": null,
+      "itemCode": "11797",
+      "description": "Meatigo Hot Wings 250.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 75,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:18003",
+      "skuMaster": null,
+      "itemCode": "18003",
+      "description": "Meatigo Chicken Curry Cut Skinless Frozen 450.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 30,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:18004",
+      "skuMaster": null,
+      "itemCode": "18004",
+      "description": "Meatigo Chicken Boneless Breast Frozen 450.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 30,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:205950",
+      "skuMaster": null,
+      "itemCode": "205950",
+      "description": "psm Frozen Pork Pepperoni Salami 100.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 40,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:253430",
+      "skuMaster": null,
+      "itemCode": "253430",
+      "description": "psm Pork Salami 200.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 75,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:33387",
+      "skuMaster": null,
+      "itemCode": "33387",
+      "description": "psm Frozen Chicken Chilli Salami 200.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 75,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:33390",
+      "skuMaster": null,
+      "itemCode": "33390",
+      "description": "psm Chicken Seekh Kebab 500.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 272,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:398656",
+      "skuMaster": null,
+      "itemCode": "398656",
+      "description": "Meatigo Chicken Drumsticks 450.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 270,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:414867",
+      "skuMaster": null,
+      "itemCode": "414867",
+      "description": "psm Chinese Veg Spring Rolls 240.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 25,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:432518",
+      "skuMaster": null,
+      "itemCode": "432518",
+      "description": "Meatigo Chicken Kheema 450.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 360,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:4459",
+      "skuMaster": null,
+      "itemCode": "4459",
+      "description": "psm Original Chicken Momos 24.0 Pieces",
+      "poQuantity": 0,
+      "grnQuantity": 475,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:4460",
+      "skuMaster": null,
+      "itemCode": "4460",
+      "description": "psm Spicy Chicken Momos 24.0 Pieces",
+      "poQuantity": 0,
+      "grnQuantity": 325,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:4461",
+      "skuMaster": null,
+      "itemCode": "4461",
+      "description": "psm Veg & Paneer Momos 24.0 Pieces",
+      "poQuantity": 0,
+      "grnQuantity": 75,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:453259",
+      "skuMaster": null,
+      "itemCode": "453259",
+      "description": "psm Chicken Cheese & Onion Sausage 250.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 40,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:4694",
+      "skuMaster": null,
+      "itemCode": "4694",
+      "description": "psm Original Chicken Momos 10.0 Pieces",
+      "poQuantity": 0,
+      "grnQuantity": 450,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:4697",
+      "skuMaster": null,
+      "itemCode": "4697",
+      "description": "psm Veg & Paneer Momos 10.0 Pieces",
+      "poQuantity": 0,
+      "grnQuantity": 400,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:469735",
+      "skuMaster": null,
+      "itemCode": "469735",
+      "description": "Meatigo Everyday Chicken Breast (Frozen) 150.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 90,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:4699",
+      "skuMaster": null,
+      "itemCode": "4699",
+      "description": "psm Pork Sausage 250.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 40,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:4700",
+      "skuMaster": null,
+      "itemCode": "4700",
+      "description": "psm Pork Ham 200.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 50,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:470663",
+      "skuMaster": null,
+      "itemCode": "470663",
+      "description": "psm Whole Wheat Momos - Veg & Paneer 330.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 40,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:49168",
+      "skuMaster": null,
+      "itemCode": "49168",
+      "description": "psm Peri Peri Veg Momos 15.0 Pieces",
+      "poQuantity": 0,
+      "grnQuantity": 80,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:498695",
+      "skuMaster": null,
+      "itemCode": "498695",
+      "description": "psm Chicken Salami 200.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 25,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:507809",
+      "skuMaster": null,
+      "itemCode": "507809",
+      "description": "psm Pizza Minis - Chicken Tikka 180.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 50,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:598770",
+      "skuMaster": null,
+      "itemCode": "598770",
+      "description": "psm Pork Breakfast Bacon 150.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 36,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:6664",
+      "skuMaster": null,
+      "itemCode": "6664",
+      "description": "psm Chicken Sausages 250.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 380,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:730016",
+      "skuMaster": null,
+      "itemCode": "730016",
+      "description": "psm Whole Wheat Chicken Momos 330.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 80,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:750414",
+      "skuMaster": null,
+      "itemCode": "750414",
+      "description": "psm Super Saver Chicken Momo Pack (Chef Momos) 1.0 kg",
+      "poQuantity": 0,
+      "grnQuantity": 72,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:755774",
+      "skuMaster": null,
+      "itemCode": "755774",
+      "description": "psm Chicken & Cheese Momos 540.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 25,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:790919",
+      "skuMaster": null,
+      "itemCode": "790919",
+      "description": "Meatigo Everyday Fish Fillet 200.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 30,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:81521",
+      "skuMaster": null,
+      "itemCode": "81521",
+      "description": "psm Peri Peri Chicken Momos 250.0 g",
+      "poQuantity": 0,
+      "grnQuantity": 640,
+      "invoiceQuantity": 0,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0503",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0503",
+      "description": "PSM Cheesy Spicy Vegetable Momos 24Pcs",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 100,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-m-f-1703",
+      "skuMaster": null,
+      "itemCode": "FG-M-F-1703",
+      "description": "Meatigo RTC Meatigo Hot Wings 250g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 150,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-m-f-0620",
+      "skuMaster": null,
+      "itemCode": "FG-M-F-0620",
+      "description": "Meatigo Chicken Curry Cuts 450g (5%)",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 60,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-m-f-0619",
+      "skuMaster": null,
+      "itemCode": "FG-M-F-0619",
+      "description": "Meatigo Chicken Boneless Breast 450g (5%)",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 60,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0249",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0249",
+      "description": "PSM Pork Plain Salami 200g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 150,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0234",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0234",
+      "description": "PSM Frozen Chicken Chilli Salami 200g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 150,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0413",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0413",
+      "description": "PSM Frozen Chicken Seekh Kabab 500g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 544,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-m-f-0602",
+      "skuMaster": null,
+      "itemCode": "FG-M-F-0602",
+      "description": "Meatigo Chicken Drumsticks 450g (5%)",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 540,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-1707",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-1707",
+      "description": "PSM Spring Roll-Chinese Veg 240g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 50,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-m-f-0622",
+      "skuMaster": null,
+      "itemCode": "FG-M-F-0622",
+      "description": "Meatigo Chicken Keema (Mince) 450g (5%)",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 720,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0505",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0505",
+      "description": "PSM Chicken Momos 24Pcs",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 950,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0512",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0512",
+      "description": "PSM Spicy Chicken Momos 24Pcs",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 650,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0514",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0514",
+      "description": "PSM Vegetable & Paneer Momos 24Pcs",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 150,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0335",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0335",
+      "description": "PSM Chicken Cheese & Onion Sausage 250g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 80,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0504",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0504",
+      "description": "PSM Chicken Momos 10Pcs",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 900,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0513",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0513",
+      "description": "PSM Vegetable & Paneer Momos 10Pcs",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 800,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-m-f-1728",
+      "skuMaster": null,
+      "itemCode": "FG-M-F-1728",
+      "description": "Meatigo RTC Everyday Chicken Breast 150g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 180,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0323",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0323",
+      "description": "PSM Frozen Pork Sausage 250g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 80,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0236",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0236",
+      "description": "PSM Frozen Pork Ham 200g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 100,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0580",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0580",
+      "description": "PSM Whole Wheat Momos-Veg & Paneer 330g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 80,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0527",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0527",
+      "description": "PSM Peri Peri Veg Momos 15Pcs",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 160,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0247",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0247",
+      "description": "PSM Frozen Chicken Salami 200g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 50,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0102",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0102",
+      "description": "PSM Frozen Pork Breakfast Bacon 150g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 72,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0321",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0321",
+      "description": "PSM Frozen Chicken Sausage 250g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 760,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0581",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0581",
+      "description": "PSM Whole Wheat Momos-Chicken 330g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 160,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0501",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0501",
+      "description": "PSM FS Chef Momo-Chicken 1kg",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 144,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0564",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0564",
+      "description": "PSM Cheese & Chicken Momos 540g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 50,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-m-f-1729",
+      "skuMaster": null,
+      "itemCode": "FG-M-F-1729",
+      "description": "Meatigo RTC Everyday Fish Fillet 200g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 60,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0542",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0542",
+      "description": "Peri Peri Chicken Momos 250g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 1280,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-0237",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-0237",
+      "description": "PSM Frozen Pork Pepperoni Salami 100g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 80,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    },
+    {
+      "key": "raw:fg-p-f-1911",
+      "skuMaster": null,
+      "itemCode": "FG-P-F-1911",
+      "description": "PSM Pizza Minis-Chicken Tikka 180g",
+      "poQuantity": 0,
+      "grnQuantity": 0,
+      "invoiceQuantity": 100,
+      "reasons": [
+        "unmapped_master_sku",
+        "item_missing_in_po",
+        "invoice_qty_exceeds_grn_qty"
+      ]
+    }
+  ]
+}

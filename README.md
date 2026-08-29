@@ -4,6 +4,7 @@ Upload Purchase Order (PO), Goods Receipt Note (GRN), and Invoice documents; the
 
 - `backend/` — Node.js, Express, MongoDB (Mongoose), Gemini API
 - `frontend/` — Next.js (App Router), Tailwind CSS, TanStack Query
+- `samples/` — real API responses (parsed Gemini output, a `/match` result, a `/summary` result) — see [`samples/README.md`](samples/README.md)
 
 ## Setup & Run
 
