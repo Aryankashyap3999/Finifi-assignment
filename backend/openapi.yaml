@@ -1,0 +1,539 @@
+openapi: 3.0.3
+info:
+  title: Three-Way Match Engine API
+  description: >
+    Upload PO/GRN/Invoice documents, extract structured data via Gemini, resolve line items
+    against a SKU Master catalogue, and reconcile the three documents into a live match result.
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000/api/v1
+    description: Local development
+
+security:
+  - bearerAuth: []
+
+tags:
+  - name: Auth
+    description: Signup and sign-in
+  - name: SKU Master
+    description: The catalogue every document's line items get resolved against
+  - name: Documents
+    description: Upload, list, and read PO/GRN/Invoice documents
+  - name: Match & Summary
+    description: Live reconciliation, recomputed on every read
+
+paths:
+  /users/signup:
+    post:
+      operationId: signup
+      tags: [Auth]
+      summary: Create a user account
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email, username, password]
+              properties:
+                email: { type: string, format: email }
+                username: { type: string, minLength: 3, pattern: '^[a-zA-Z0-9]+$' }
+                password: { type: string }
+      responses:
+        '201':
+          description: User created (no token returned — sign in separately)
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/SuccessEnvelope' }
+        '400':
+          description: Validation error or duplicate email/username
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ErrorEnvelope' }
+
+  /users/signin:
+    post:
+      operationId: signin
+      tags: [Auth]
+      summary: Sign in and receive a Bearer token
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email, password]
+              properties:
+                email: { type: string, format: email }
+                password: { type: string }
+      responses:
+        '200':
+          description: Signed in
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/SuccessEnvelope'
+                  - type: object
+                    properties:
+                      data:
+                        type: object
+                        properties:
+                          _id: { type: string }
+                          username: { type: string }
+                          email: { type: string }
+                          avatar: { type: string }
+                          token: { type: string }
+        '400':
+          description: Invalid password
+        '404':
+          description: No user with that email
+
+  /masters/sku:
+    post:
+      operationId: createSkuMaster
+      tags: [SKU Master]
+      summary: Create a SKU Master record
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/SkuMasterInput' }
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/SuccessEnvelope'
+                  - type: object
+                    properties: { data: { $ref: '#/components/schemas/SkuMaster' } }
+        '400':
+          description: Validation error or duplicate skuErpCode
+        '401': { $ref: '#/components/responses/Unauthorized' }
+    get:
+      operationId: listSkuMasters
+      tags: [SKU Master]
+      summary: List all SKU Master records
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/SuccessEnvelope'
+                  - type: object
+                    properties:
+                      data:
+                        type: array
+                        items: { $ref: '#/components/schemas/SkuMaster' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+
+  /masters/sku/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema: { type: string }
+    get:
+      operationId: getSkuMaster
+      tags: [SKU Master]
+      summary: Get a SKU Master record by id
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/SuccessEnvelope'
+                  - type: object
+                    properties: { data: { $ref: '#/components/schemas/SkuMaster' } }
+        '404':
+          description: Not found (also returned for a malformed id)
+        '401': { $ref: '#/components/responses/Unauthorized' }
+    patch:
+      operationId: updateSkuMaster
+      tags: [SKU Master]
+      summary: Update a SKU Master record (partial)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/SkuMasterInput' }
+      responses:
+        '200':
+          description: Updated
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/SuccessEnvelope'
+                  - type: object
+                    properties: { data: { $ref: '#/components/schemas/SkuMaster' } }
+        '404':
+          description: Not found
+        '401': { $ref: '#/components/responses/Unauthorized' }
+    delete:
+      operationId: deleteSkuMaster
+      tags: [SKU Master]
+      summary: Delete a SKU Master record
+      responses:
+        '200':
+          description: Deleted
+        '404':
+          description: Not found
+        '401': { $ref: '#/components/responses/Unauthorized' }
+
+  /documents/upload:
+    post:
+      operationId: uploadDocument
+      tags: [Documents]
+      summary: Upload a PO/GRN/Invoice file for Gemini extraction, resolution, and persistence
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: [file, documentType]
+              properties:
+                file:
+                  type: string
+                  format: binary
+                  description: PDF, PNG, or JPEG, max 15MB
+                documentType:
+                  type: string
+                  enum: [po, grn, invoice]
+      responses:
+        '201':
+          description: Parsed and persisted (duplicates are stored, not rejected — see `duplicate`)
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/SuccessEnvelope'
+                  - type: object
+                    properties:
+                      data:
+                        type: object
+                        properties:
+                          document: { $ref: '#/components/schemas/Document' }
+                          documentType: { type: string, enum: [po, grn, invoice] }
+                          duplicate:
+                            type: string
+                            nullable: true
+                            enum: [duplicate_po, duplicate_document, null]
+        '400':
+          description: Missing/invalid file, or invalid documentType
+        '422':
+          description: Gemini returned malformed or incomplete data, even after one retry
+        '401': { $ref: '#/components/responses/Unauthorized' }
+
+  /documents:
+    get:
+      operationId: listDocuments
+      tags: [Documents]
+      summary: List documents, optionally filtered
+      parameters:
+        - name: type
+          in: query
+          schema: { type: string, enum: [po, grn, invoice] }
+        - name: poNumber
+          in: query
+          schema: { type: string }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/SuccessEnvelope'
+                  - type: object
+                    properties:
+                      data:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            document: { $ref: '#/components/schemas/Document' }
+                            documentType: { type: string, enum: [po, grn, invoice] }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+
+  /documents/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema: { type: string }
+    get:
+      operationId: getDocument
+      tags: [Documents]
+      summary: Get a single document (searches PO, GRN, and Invoice collections)
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/SuccessEnvelope'
+                  - type: object
+                    properties:
+                      data:
+                        type: object
+                        properties:
+                          document: { $ref: '#/components/schemas/Document' }
+                          documentType: { type: string, enum: [po, grn, invoice] }
+        '404':
+          description: Not found (also returned for a malformed id)
+        '401': { $ref: '#/components/responses/Unauthorized' }
+
+  /documents/{id}/file:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema: { type: string }
+    get:
+      operationId: getDocumentFile
+      tags: [Documents]
+      summary: Stream the original uploaded file (for preview)
+      responses:
+        '200':
+          description: The raw file
+          content:
+            application/pdf: { schema: { type: string, format: binary } }
+            image/png: { schema: { type: string, format: binary } }
+            image/jpeg: { schema: { type: string, format: binary } }
+        '404':
+          description: Not found
+        '401': { $ref: '#/components/responses/Unauthorized' }
+
+  /match/{poNumber}:
+    parameters:
+      - name: poNumber
+        in: path
+        required: true
+        schema: { type: string }
+    get:
+      operationId: getMatch
+      tags: [Match & Summary]
+      summary: Recompute the live match result for a PO number
+      description: >
+        Always recomputes from currently stored documents — never cached. Returns a valid
+        response (status insufficient_documents) even if no documents exist yet for this poNumber.
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/SuccessEnvelope'
+                  - type: object
+                    properties: { data: { $ref: '#/components/schemas/MatchResult' } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+
+  /summary/{poNumber}:
+    parameters:
+      - name: poNumber
+        in: path
+        required: true
+        schema: { type: string }
+    get:
+      operationId: getSummary
+      tags: [Match & Summary]
+      summary: Stat cards + cumulative GRN/Invoice table for a PO number
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/SuccessEnvelope'
+                  - type: object
+                    properties: { data: { $ref: '#/components/schemas/SummaryResult' } }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  responses:
+    Unauthorized:
+      description: Missing/malformed Authorization header, or invalid/expired token
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/ErrorEnvelope' }
+
+  schemas:
+    SuccessEnvelope:
+      type: object
+      properties:
+        success: { type: boolean, example: true }
+        message: { type: string }
+        data: {}
+        err: { type: object }
+
+    ErrorEnvelope:
+      type: object
+      properties:
+        success: { type: boolean, example: false }
+        message: { type: string }
+        data: { type: object }
+        err: {}
+
+    SkuMasterInput:
+      type: object
+      required: [skuErpCode, name]
+      properties:
+        skuErpCode: { type: string }
+        name: { type: string }
+        eanCode: { type: string }
+        hsnCode: { type: string }
+        uom: { type: string }
+        agreedRate: { type: number }
+        mrp: { type: number }
+        priceTolerance: { type: number, minimum: 0, maximum: 1, description: 'Fraction, e.g. 0.05 = 5%' }
+
+    SkuMaster:
+      allOf:
+        - $ref: '#/components/schemas/SkuMasterInput'
+        - type: object
+          properties:
+            _id: { type: string }
+            createdAt: { type: string, format: date-time }
+            updatedAt: { type: string, format: date-time }
+
+    DocumentItem:
+      type: object
+      properties:
+        itemCode: { type: string }
+        description: { type: string }
+        skuMaster:
+          description: Null if unresolved; a raw ObjectId string or the populated SkuMaster depending on the endpoint
+          oneOf:
+            - type: string
+            - $ref: '#/components/schemas/SkuMaster'
+        quantity: { type: number, description: 'PO items only' }
+        receivedQuantity: { type: number, description: 'GRN items only' }
+        unitRate: { type: number, description: 'Invoice items only' }
+        mrp: { type: number, description: 'GRN and Invoice items' }
+
+    Document:
+      type: object
+      description: A PurchaseOrder, Grn, or Invoice — shape varies slightly by documentType
+      properties:
+        _id: { type: string }
+        poNumber: { type: string }
+        poDate: { type: string, format: date-time }
+        vendorName: { type: string }
+        grnNumber: { type: string }
+        grnDate: { type: string, format: date-time }
+        invoiceNumber: { type: string }
+        invoiceDate: { type: string, format: date-time }
+        items:
+          type: array
+          items: { $ref: '#/components/schemas/DocumentItem' }
+        rawParsed:
+          type: object
+          description: Unmodified Gemini output, kept for debugging extraction issues
+        filePath: { type: string }
+        originalFileName: { type: string }
+        fileMimeType: { type: string }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+
+    MatchItem:
+      type: object
+      properties:
+        key:
+          type: string
+          description: Resolved SkuMaster._id, or "raw:<normalized itemCode>" if unresolved
+        skuMaster:
+          description: Null if this item could not be resolved to any SkuMaster record
+          allOf:
+            - $ref: '#/components/schemas/SkuMaster'
+        itemCode: { type: string }
+        description: { type: string }
+        poQuantity: { type: number }
+        grnQuantity: { type: number }
+        invoiceQuantity: { type: number }
+        reasons:
+          type: array
+          items: { $ref: '#/components/schemas/ReasonCode' }
+
+    ReasonCode:
+      type: string
+      enum:
+        - grn_qty_exceeds_po_qty
+        - invoice_qty_exceeds_grn_qty
+        - invoice_qty_exceeds_po_qty
+        - invoice_date_after_po_date
+        - duplicate_po
+        - duplicate_document
+        - item_missing_in_po
+        - price_mismatch
+        - mrp_mismatch
+        - unmapped_master_sku
+
+    MatchStatus:
+      type: string
+      enum: [insufficient_documents, mismatch, partially_matched, matched]
+
+    MatchResult:
+      type: object
+      properties:
+        poNumber: { type: string }
+        status: { $ref: '#/components/schemas/MatchStatus' }
+        reasons:
+          type: array
+          items: { $ref: '#/components/schemas/ReasonCode' }
+        linkedDocuments:
+          type: object
+          properties:
+            pos: { type: array, items: { $ref: '#/components/schemas/Document' } }
+            grns: { type: array, items: { $ref: '#/components/schemas/Document' } }
+            invoices: { type: array, items: { $ref: '#/components/schemas/Document' } }
+        items:
+          type: array
+          items: { $ref: '#/components/schemas/MatchItem' }
+
+    SummaryRow:
+      type: object
+      properties:
+        documentType: { type: string, enum: [grn, invoice, status] }
+        documentNumber: { type: string, nullable: true }
+        date: { type: string, format: date-time, nullable: true }
+        receivedQuantity: { type: number, nullable: true }
+        invoicedQuantity: { type: number, nullable: true }
+        cumulativeReceivedQuantity: { type: number }
+        cumulativeInvoicedQuantity: { type: number }
+        pendingDelivery: { type: number }
+        status:
+          allOf: [{ $ref: '#/components/schemas/MatchStatus' }]
+          description: Present only on the final documentType="status" row
+
+    SummaryResult:
+      type: object
+      properties:
+        poNumber: { type: string }
+        stats:
+          type: object
+          properties:
+            poAmount: { type: number, description: 'Sum of poQuantity × SkuMaster.agreedRate' }
+            totalInvoiced: { type: number, description: 'Sum of actual invoice quantity × unitRate' }
+            totalReceived: { type: number, description: 'Sum of grnQuantity × SkuMaster.agreedRate' }
+        rows:
+          type: array
+          items: { $ref: '#/components/schemas/SummaryRow' }

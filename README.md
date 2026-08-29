@@ -82,6 +82,14 @@ The frontend mirrors this: `lib/apiClient.js` (a framework-agnostic fetch wrappe
 
 `poNumber` deliberately has **no unique constraint** on `PurchaseOrder`, and `Grn`/`Invoice` have **non-unique** compound indexes on `{poNumber, grnNumber}` / `{poNumber, invoiceNumber}` — the spec requires duplicates to be *stored*, not rejected ("store it anyway, don't overwrite, surface the conflict"), so a unique index would silently break the exact scenario the duplication check exists to catch. This was caught during implementation, not anticipated up front — the schemas were first written with unique constraints, and fixed once the duplication logic exposed the contradiction.
 
+## API documentation
+
+Full OpenAPI 3.0 spec at [`backend/openapi.yaml`](backend/openapi.yaml) — every route, request/response shape, the reason-code and status enums, all as one file. View it interactively by pasting into [editor.swagger.io](https://editor.swagger.io), or:
+
+```bash
+npx @redocly/cli preview-docs backend/openapi.yaml
+```
+
 ## Parsing flow
 
 1. `POST /documents/upload` receives `file` + `documentType` (multer, disk storage, PDF/PNG/JPEG only)
