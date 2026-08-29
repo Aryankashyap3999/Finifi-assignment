@@ -3,7 +3,7 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 
 const AuthContext = createContext(null);
-const TOKEN_STORAGE_KEY = 'finifi_auth_token';
+export const TOKEN_STORAGE_KEY = 'finifi_auth_token';
 
 export const AuthProvider = ({ children }) => {
   const [token, setTokenState] = useState(null);
