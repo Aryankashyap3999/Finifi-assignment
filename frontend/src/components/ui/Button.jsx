@@ -1,7 +1,8 @@
 const VARIANT_CLASSES = {
   primary: 'bg-slate-900 text-white hover:bg-slate-800 focus-visible:outline-slate-900',
   secondary:
-    'bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 focus-visible:outline-slate-400'
+    'bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 focus-visible:outline-slate-400',
+  danger: 'bg-red-600 text-white hover:bg-red-500 focus-visible:outline-red-600'
 };
 
 export const Button = ({
