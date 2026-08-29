@@ -24,3 +24,6 @@ export const uploadDocument = ({ token, documentType, file }) => {
 
 export const getDocumentFileBlob = ({ token, documentId }) =>
   apiRequestBlob(`/documents/${documentId}/file`, { token });
+
+export const getDocumentById = ({ token, documentId }) =>
+  apiRequest(`/documents/${documentId}`, { token });
