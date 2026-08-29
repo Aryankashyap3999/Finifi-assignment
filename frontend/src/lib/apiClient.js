@@ -31,3 +31,20 @@ export const apiRequest = async (path, { method = 'GET', body, token, isFormData
 
   return payload.data;
 };
+
+// GET /documents/:id/file returns the raw file, not the { success, data } JSON
+// envelope, so it needs its own path — still routed through the same base URL
+// and auth header as apiRequest.
+export const apiRequestBlob = async (path, { token } = {}) => {
+  const headers = {};
+  if (token) headers.Authorization = `Bearer ${token}`;
+
+  const response = await fetch(`${API_BASE_URL}${path}`, { headers });
+
+  if (!response.ok) {
+    const payload = await response.json().catch(() => null);
+    throw new ApiError(payload?.message || 'Failed to load file', response.status, payload?.err);
+  }
+
+  return response.blob();
+};
