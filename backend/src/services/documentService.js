@@ -6,8 +6,7 @@ import matchAuditRepository from '../repositories/matchAuditRepository.js';
 import purchaseOrderRepository from '../repositories/purchaseOrderRepository.js';
 import { getExtractionSchemaForType } from '../validators/documentExtractionSchema.js';
 import ClientError from '../utils/errors/clientError.js';
-import { extractStructuredData } from './gemini/geminiClient.js';
-import { getPromptForDocumentType } from './gemini/prompts.js';
+import { extractStructuredData, getPromptForDocumentType } from './extraction/index.js';
 import { resolveSkuMaster } from './masterResolutionService.js';
 
 const DOCUMENT_TYPE_HANDLERS = {
@@ -61,7 +60,7 @@ const parseWithRetry = async (documentType, file) => {
       return { raw, validated: extractionSchema.parse(raw) };
     } catch (error) {
       lastError = error;
-      console.log(`Gemini extraction attempt ${attempt} for ${documentType} failed`, error);
+      console.log(`AI extraction attempt ${attempt} for ${documentType} failed`, error);
     }
   }
 
